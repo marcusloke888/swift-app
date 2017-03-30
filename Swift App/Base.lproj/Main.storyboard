@@ -34,25 +34,40 @@
                                     <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2Z-Xa-ytQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-Af-ESi">
-                                <rect key="frame" x="147" y="109" width="81" height="30"/>
-                                <state key="normal" title="Button Cool"/>
-                                <connections>
-                                    <action selector="btnCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eYy-UM-eUH"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-VY-ylf">
+                                <rect key="frame" x="137.5" y="109" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c7U-28-kDL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-Rd-IOx">
+                                <rect key="frame" x="137.5" y="159" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Fo3-9E-6KL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hRs-gt-sEi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="011-aB-00G"/>
-                            <constraint firstItem="f3Y-Af-ESi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7xb-VC-GWg"/>
-                            <constraint firstItem="f3Y-Af-ESi" firstAttribute="top" secondItem="0ME-PJ-OEQ" secondAttribute="bottom" constant="8" id="Djc-wW-bcU"/>
+                            <constraint firstItem="Ge4-VY-ylf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6WY-mC-Sva"/>
+                            <constraint firstItem="zbX-Rd-IOx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CfF-yM-rSd"/>
+                            <constraint firstItem="Ge4-VY-ylf" firstAttribute="top" secondItem="0ME-PJ-OEQ" secondAttribute="bottom" constant="8" id="GF7-gh-BZo"/>
                             <constraint firstItem="0ME-PJ-OEQ" firstAttribute="top" secondItem="hRs-gt-sEi" secondAttribute="bottom" constant="10" id="Mmy-dO-7lI"/>
+                            <constraint firstItem="zbX-Rd-IOx" firstAttribute="top" secondItem="Ge4-VY-ylf" secondAttribute="bottom" constant="20" id="UH3-Oj-DLC"/>
                             <constraint firstItem="0ME-PJ-OEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZT-R7-d3U"/>
                             <constraint firstItem="hRs-gt-sEi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="c3s-yc-GFP"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="Ge4-VY-ylf" id="LE2-7m-qp7"/>
+                        <outlet property="text2" destination="zbX-Rd-IOx" id="BZO-Sr-zl6"/>
                         <outlet property="theLabel" destination="hRs-gt-sEi" id="IaO-ul-LLe"/>
                     </connections>
                 </viewController>
