@@ -25,9 +25,10 @@ class ViewController: UIViewController {
        //     theLabel.text = "Tap 10 times"
        // }
        // print(tapCount)
-        print(text1)
-        print(text2.text!)
-        print(text1.text!)
+       // theLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
+        
+         theLabel.text = " Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
     
     /*
